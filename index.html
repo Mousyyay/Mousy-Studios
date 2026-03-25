@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <title>Untitled Minigames</title>
     <style>
         body {
             margin: 0;
@@ -24,6 +24,29 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .title-text {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .word-untiled {
+            color: white;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            margin-right: 10px;
+        }
+
+        .word-minigames {
+            color: #0066cc;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
         .image-button {
             cursor: pointer;
             transition: transform 0.2s;
@@ -35,6 +58,25 @@
         .image-button:hover {
             transform: scale(1.05);
         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <span class="title-text">
+                <span class="word-untiled">Untitled</span>
+                <span class="word-minigames">Minigames</span>
+            </span>
+        </h1>
+        <p>Click the button below to visit the safe website</p>
+        <a href="https://example.com" target="_blank">
+            <button class="image-button">
+                <img src="https://via.placeholder.com/200" alt="Visit Site" width="200">
+            </button>
+        </a>
+    </div>
+</body>
+</html>        }
     </style>
 </head>
 <body>
