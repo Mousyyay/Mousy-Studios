@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Untitled Minigames</title>
+    <title>Untitled - Minigames</title>
     <style>
         body {
             margin: 0;
@@ -22,6 +22,8 @@
             background: white;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%;
         }
 
         h1 {
@@ -40,11 +42,13 @@
             color: white;
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
             margin-right: 10px;
+            font-size: 2em;
         }
 
         .word-minigames {
             color: #0066cc;
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font-size: 2em;
         }
 
         .image-button {
@@ -58,56 +62,51 @@
         .image-button:hover {
             transform: scale(1.05);
         }
+
+        .links-container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .game-link {
+            margin: 10px;
+            padding: 15px 25px;
+            background: #0066cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .game-link:hover {
+            background: #004499;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>How many ways can you join this game?</h1>
-        <p>Click the button below to play</p>
-        <a href="https://www.roblox.com/games/108065360611895/How-many-ways-can-you-reset-in-this-game" target="_blank">
-            <button class="image-button">
-                <img src="https://via.placeholder.com/200" alt="Play Now" width="200">
-            </button>
-        </a>
-        <br><br>
-        <a href="https://www.roblox.com/games/71683705330898/Untitled-Minigames?" target="_blank">
+        <h1>
             <span class="title-text">
                 <span class="word-untiled">Untitled</span>
                 <span class="word-minigames">Minigames</span>
             </span>
-        </a>
-    </div>
-</body>
-</html>        }
+        </h1>
+        
+        <div class="links-container">
+            <a href="https://www.roblox.com/games/108065360611895/How-many-ways-can-you-reset-in-this-game" 
+               class="game-link" target="_blank">
+                How many ways can you reset in this game?
+            </a>
+            <a href="https://www.roblox.com/games/71683705330898/Untitled-Minigames?" 
+               class="game-link" target="_blank">
+                Untitled Minigames
+            </a>
+        </div>
 
-        .word-untiled {
-            color: white;
-            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-            margin-right: 10px;
-        }
-
-        .word-minigames {
-            color: #0066cc;
-            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-        }
-
-        .image-button {
-            cursor: pointer;
-            transition: transform 0.2s;
-            border: none;
-            background: none;
-            padding: 0;
-        }
-
-        .image-button:hover {
-            transform: scale(1.05);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>How many ways can you join this game?</h1>
-        <p>Click the button below to play</p>
+        <p style="margin-top: 30px;">Click a button to play</p>
         <a href="https://www.roblox.com/games/108065360611895/How-many-ways-can-you-reset-in-this-game" target="_blank">
             <button class="image-button">
                 <img src="https://via.placeholder.com/200" alt="Play Now" width="200">
